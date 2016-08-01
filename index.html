@@ -2,13 +2,24 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>myPlugin</title>
+    <style>
+        .height10{
+            height: 10px;
+        }
+        .height20{
+            height: 20px;
+        }
+    </style>
 </head>
 <body>
+<div class="height10"></div>
+<div class="height20"></div>
 <script src="lib/jquery-1.4.4_min.js"></script>
 <script src="myPlugin.js"></script>
 <script>
-
+    var tallest = $('div').maxHeight();
+    console.log(tallest);
 </script>
 </body>
 </html>
